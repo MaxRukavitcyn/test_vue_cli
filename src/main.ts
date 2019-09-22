@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
+import {router, hui} from './router';
 import store from './store';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
 
+Vue.use(Vuetify);
 Vue.config.productionTip = false;
-
+// Vue.use(Vuetify);
 new Vue({
   router,
   store,
